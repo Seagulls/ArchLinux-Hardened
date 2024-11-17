@@ -55,7 +55,7 @@ htop
 iotop
 lsof
 #nvtop # htop equivalent for GPUs
-amdtop
+radeontop
 
 # Desktop environment
 #sway
