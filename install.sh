@@ -291,12 +291,11 @@ ln -sfT dash /mnt/usr/bin/sh
 } >/mnt/etc/kernel/cmdline
 
 echo "FONT=$font" >/mnt/etc/vconsole.conf
-echo "KEYMAP=fr-latin1" >>/mnt/etc/vconsole.conf
+echo "KEYMAP=uk" >>/mnt/etc/vconsole.conf
 
 echo "${hostname}" >/mnt/etc/hostname
-echo "en_US.UTF-8 UTF-8" >>/mnt/etc/locale.gen
-echo "fr_FR.UTF-8 UTF-8" >>/mnt/etc/locale.gen
-ln -sf /usr/share/zoneinfo/Europe/Paris /mnt/etc/localtime
+echo "en_GB.UTF-8 UTF-8" >>/mnt/etc/locale.gen
+ln -sf /usr/share/zoneinfo/Europe/London /mnt/etc/localtime
 arch-chroot /mnt locale-gen
 
 genfstab -U /mnt >>/mnt/etc/fstab
