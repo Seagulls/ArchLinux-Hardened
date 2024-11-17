@@ -54,13 +54,16 @@ dunst # Notification daemon
 htop
 iotop
 lsof
-nvtop # htop equivalent for GPUs
+#nvtop # htop equivalent for GPUs
+amdtop
 
 # Desktop environment
-sway
-swaylock
-swayidle
-swaybg
+#sway
+#swaylock
+#swayidle
+#swaybg
+gdm
+gnome
 kanshi # Monitors management
 xdg-desktop-portal-wlr # Enable screen sharing capabilites
 xdg-desktop-portal-gtk # File chooser and others
@@ -69,7 +72,7 @@ grim # flameshot dependency for Wayland
 wezterm # Terminal emulator
 wl-clipboard
 bemenu-wayland
-python-i3ipc # Interact with Sway using Python
+#python-i3ipc # Interact with Sway using Python
 python-psutil # status-bar requirement
 libnotify # notify-send
 qt5-wayland
@@ -119,12 +122,13 @@ strace
 # File viewers/editors
 zathura
 zathura-pdf-poppler
-swayimg
+#swayimg
 mpv
 gimp
 imagemagick
 tree
 fzf
+nautilus
 
 # CLI
 zsh
